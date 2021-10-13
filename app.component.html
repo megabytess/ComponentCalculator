@@ -1,0 +1,23 @@
+<div class="container text-center" style="text-align: center;">
+  <h1>Components Calculator</h1>
+</div>
+
+
+<app-numbers style="text-align: center;" 
+(sendValue1)="receiveUserInput1($event)" 
+(sendValue2)="receiveUserInput2($event)">
+</app-numbers>
+
+<app-operations  style="text-align: center;"
+(opChoice)="receiveAdd($event)"
+(opChoice)="receiveSubtract($event)"
+(opChoice)="receiveMultiply($event)"
+(opChoice)="receiveDivide($event)">
+</app-operations>
+
+<app-result style="text-align: center;"
+[userInput1]="userInput1"
+[userInput2]="userInput2"
+[operatorChoice]="operationChoice">
+
+</app-result>
