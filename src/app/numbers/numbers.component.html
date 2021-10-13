@@ -1,0 +1,12 @@
+<section class="text-center p-3 ">  
+    <label for="userInput1" class="mx-auto px-3">First Number: </label>
+    <br>
+    <br>
+    <input [(ngModel)]="userInput1" (input)="sendUserInput1()" type="number" >
+    <br>
+    <br>
+    <label for="userInput2" class="mx-auto px-3">Second Number: </label>
+    <br>
+    <br>
+    <input [(ngModel)]="userInput2" (input)="sendUserInput2()" type="number" >
+</section>
